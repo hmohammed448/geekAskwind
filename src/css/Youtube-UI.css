@@ -16,6 +16,11 @@ section {
     max-width: 19.4em !important;
 }
 
+aside .category:hover {
+    background-color: rgb(224, 223, 223);
+    cursor: pointer;
+}
+
 #nav-1 i {
     margin-right: 0.5em;
     padding: 0 0.5em;
@@ -53,12 +58,10 @@ i {
 .left-categories {
     width: 13.5% !important;
     position: fixed;
-    /* top: 0; */
 }
 
 .video-area {
     width: 86.5%;
-    /* height: 100vh; */
     background-color: rgb(249, 249, 249) !important;
     border-top: 1px solid #ddd !important;
 }
