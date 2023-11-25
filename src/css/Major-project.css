@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+p {
+    color: #787976;
+    font: 400 1rem/1.5625rem "Open Sans", sans-serif;
+}
+
+.main-heading {
+    display: inline-block;
+}
+
+.main-heading h1 {
+    font: 700 3.5rem/4rem "Montserrat", sans-serif;
+    margin-top: 6.5rem;
+}
+
+.main-heading .p-large {
+    margin-bottom: 2rem;
+    color: #dfe5ec;
+    font: 400 1.125rem/1.625rem "Open Sans", sans-serif;
+    margin-top: 0.1em;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Major\ Project/header-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding-bottom: 17rem;
+}
+
+.logo {
+    max-width: 7em !important;
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: #113448;
+}
+
+.all-links {
+    display: flex;
+    justify-content: end;
+}
+
+.all-links-ul {
+    width: 80vw;
+    display: flex !important;
+    flex-flow: row wrap;
+    justify-content: flex-end !important;
+    align-items: center;
+}
+
+#about {
+    display: flex !important;
+    align-items: center;
+}
+
+#about a i {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.all-links ul li {
+    display: flex;
+    align-items: center;
+    height: 2em !important;
+}
+
+.all-links ul li a {
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #e8e7e7;
+}
+
+.all-links ul li .about-flex {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    position: relative !important;
+    width: 2em !important;
+    margin: auto 0.2em;
+    height: 2em;
+}
+
+.social-items {
+    position: relative;
+    display: inline-block;
+}
+
+.social img {
+    position: relative;
+    left: -0.85em;
+    min-width: 0.5em !important;
+    z-index: 1;
+}
+
+.social i::before {
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute;
+    z-index: 2;
+    top: -2.8em !important;
+    left: 0.85em !important;
+    font-size: 0.8rem !important;
+}
+
+.form-2 .fa-stack {
+    margin-right: 0.25rem;
+    margin-bottom: 0.75rem;
+    margin-left: 0.125rem;
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+#contact {
+    margin-right: 1rem !important;
+}
+
+.fa-stack-1x {
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.hexagon {
+    position: absolute;
+    inset: 0;
+    background: url(../Major\ Project/bg-icon/hexagon-green.svg) center center no-repeat;
+    transition: all 0.2s ease;
+}
+
+.fa-stack {
+    display: inline-block;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+}
+
+.fa-stack-sm {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+}
+
+.nav-2 .fa-stack {
+    margin-right: 0.25rem;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 0.125rem;
+    width: 1.625rem;
+    height: 1.625rem;
+}
+
+.nav-2 .fa-stack .hexagon {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-size: 1.625rem 1.625rem;
+}
+
+.nav-2 .fa-stack-1x {
+    font-size: 0.6875rem;
+    line-height: 1.625rem;
+}
+
+.cards-2 .fa-stack {
+    /* border: 1px solid orange; */
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+    line-height: 6rem;
+    position: relative;
+    vertical-align: middle;
+}
+
+.cards-2 .fa-stack .hexagon {
+    width: 6rem;
+    height: 6rem;
+    background-size: 6rem 6rem;
+    /* border: 1px solid black; */
+}
+
+.cards-2 .fa-stack-1x {
+    width: 6rem;
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+.form-2 .fa-stack .hexagon {
+    width: 3.25rem;
+    height: 3.25rem;
+    background-size: 3.25rem 3.25rem;
+}
+
+.form-2 .fa-stack-1x {
+    font-size: 1.5rem;
+    line-height: 3.25rem;
+}
+
+.btn-solid-reg {
+    display: inline-block;
+    padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
+    border: 0.125rem solid #14bf98;
+    border-radius: 0.25rem;
+    background-color: #14bf98;
+    color: #fff;
+    font: 700 0.75rem/0 "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-solid-lg {
+    display: inline-block;
+    padding: 1.375rem 2.125rem 1.375rem 2.125rem;
+    border: 0.125rem solid #14bf98;
+    border-radius: 0.25rem;
+    background-color: #14bf98;
+    color: #fff;
+    font: 700 0.75rem/0 "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-solid-reg,
+.btn-solid-lg:hover {
+    background-color: transparent;
+    color: #14bf98;
+    text-decoration: none;
+}
+
+.button a {
+    display: inline-block;
+    margin-right: 0.1875rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.1875rem;
+    padding: 0.3125rem 1.375rem 0.25rem 1.375rem;
+    border-radius: 0.25rem;
+    background-color: #f1f4f7;
+    color: #7b7e85;
+    font: 700 0.75rem/1.25rem "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.basic-1 {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.container {
+    max-width: 71em;
+}
+
+#intro .container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+#cards-1 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 0 3em;
+}
+
+.sub-container {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+.col-5 {
+    margin-right: 1.875rem;
+}
+
+.section-title {
+    margin-bottom: 0.1rem;
+    color: #14bf98;
+    font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
+}
+
+.section-h2 {
+    margin-bottom: 1.375rem;
+    color: #484a46;
+    font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+}
+
+.basic-1 .testimonial-author {
+    color: #484a46;
+}
+
+.testimonial-author {
+    font: 700 1rem/1.375rem "Montserrat", sans-serif;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+.basic-1 .image-container img {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0.25rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.basic-1 .image-container:hover img {
+    transform: scale(1.05);
+    height: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+    .p-heading {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .p-heading {
+        width: 65%;
+    }
+}
+
+@media (min-width: 768px) {
+    .p-heading {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 425px) {
+
+    #intro .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #cards-1 .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 3em 0;
+    }
+
+    .logo {
+        max-width: 7em !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+
+    .main-heading h1 {
+        margin-top: 0.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .all-links-ul {
+        width: 90vw;
+        display: flex !important;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    .p-heading {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

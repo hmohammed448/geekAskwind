@@ -23,12 +23,9 @@ body {
 
 .gallery {
     display: grid;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
     grid-template-columns: repeat(3, 3fr);
     justify-content: center;
     align-content: center;
-    /* align-items: center; */
     gap: 16px 16px;
     max-width: 1400px;
     margin: 0 auto;
