@@ -18,6 +18,36 @@ p {
     font: 400 1rem/1.5625rem "Open Sans", sans-serif;
 }
 
+.header {
+    width: 100vw;
+    height: calc(100vh + 14rem);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url(../Major\ Project/header-background.jpg) center center no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Major\ Project/header-background.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Major\ Project/header-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
 .main-heading {
     display: inline-block;
 }
@@ -34,33 +64,25 @@ p {
     margin-top: 0.1em;
 }
 
-.header {
-    width: 100vw;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
+.front-main-content {
+    min-width: 55%;
+    margin-top: 6.5rem;
 }
 
-.header {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url(../Major\ Project/header-background.jpg) center center no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Major\ Project/header-background.jpg) center center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Major\ Project/header-background.jpg) center center no-repeat;
-    background-size: cover;
-}
-
-.header-content {
-    width: 100vw;
-    height: 100vh;
-    margin: 0 !important;
-    padding-bottom: 17rem;
-}
-
+/* Navbar Section */
 .logo {
     max-width: 7em !important;
     margin-left: 10px;
 }
 
 .navbar {
+    width: 100vw;
+    position: fixed;
+    /* inset: 0; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -144,7 +166,7 @@ p {
     align-items: center;
 }
 
-.social {
+/* .social {
     position: relative !important;
     width: 2em !important;
     margin: auto 0.2em;
@@ -161,9 +183,9 @@ p {
     left: -0.85em;
     min-width: 0.5em !important;
     z-index: 1;
-}
+} */
 
-.social i::before {
+/* .social i::before {
     padding: 0 !important;
     margin: 0 !important;
     position: absolute;
@@ -171,7 +193,7 @@ p {
     top: -2.8em !important;
     left: 0.85em !important;
     font-size: 0.8rem !important;
-}
+} */
 
 .form-2 .fa-stack {
     margin-right: 0.25rem;
@@ -473,6 +495,121 @@ p {
     height: auto;
 }
 
+.accordian {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 34.625rem;
+}
+
+.accordian .area-1 {
+    height: 100%;
+    display: inline-block;
+    background: url(../Major\ Project/details-1-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.accordian .accordion-container h2 {
+    margin-bottom: 1.625rem;
+    font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+}
+
+.accordian .accordion-container {
+    max-width: 28rem;
+    margin-left: 5rem;
+    padding-top: 6.375rem;
+}
+
+.accordian .accordion-container .item div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.accordian .area-2 .item {
+    margin-bottom: 2rem;
+}
+
+.circle-numbering {
+    /* display: inline-block; */
+    width: 2.25rem;
+    height: 2.25rem;
+    color: #484a46;
+    border-radius: 50%;
+    border: 0.125rem solid #484a46;
+    background-color: transparent;
+    margin-right: 0.875rem;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    font: 700 1rem/2.125rem "Montserrat", sans-serif;
+    transition: all 0.2s ease;
+}
+
+.accordian .accordion-container .item div:hover {
+
+    .circle-numbering,
+    .item-title {
+        color: #14bf98;
+        background-color: #fff;
+        color: #14bf98;
+    }
+
+    .circle-numbering {
+        border: 0.125rem solid #14bf98;
+    }
+}
+
+.accordian .area-2 .item .item-title {
+    display: inline-block;
+    width: auto;
+    height: 2.25rem;
+    color: #484a46;
+    background-color: transparent;
+    margin-top: 0.125rem;
+    margin-bottom: 0.25rem;
+    margin-right: 0.875rem;
+    font: 700 1.25rem/1.75rem "Montserrat", sans-serif;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.accordian .area-4 {
+    height: 100%;
+    display: inline-block;
+    background: url(../Major\ Project/details-2-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.accordian .area-3 h4 {
+    color: #484a46;
+    font: 700 1.25rem/1.625rem "Montserrat", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.accordian .area-3 {
+    max-width: 28rem;
+    margin-right: 5rem;
+    margin-left: auto;
+    padding-top: 6.75rem;
+    padding-bottom: 0;
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.accordian .area-3 .progress-container {
+    margin-top: 1.5rem;
+
+
+}
+
+.accordian .area-3 .progress-container .progress-label {
+    color: #484a46;
+    font: 600 0.875rem/1.25rem "Open Sans", sans-serif;
+}
+
 @media only screen and (min-width: 1200px) {
     .p-heading {
         width: 55%;
@@ -494,6 +631,65 @@ p {
 }
 
 @media (max-width: 425px) {
+    .header {
+        width: 100vw;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .navbar {
+        max-height: 3.5rem !important;
+    }
+
+    .container {
+        min-width: 98vw;
+    }
+
+    .header-content {
+        width: 100vw;
+        height: 100%;
+        margin: 0 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .header-content .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+
+    .front-main-content {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 95%;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+    }
+
+    .main-heading {
+        display: block;
+    }
+
+    .main-heading h1 {
+        font: 700 2.5rem/3rem "Montserrat", sans-serif;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .main-heading p {
+        margin-bottom: 2rem;
+        padding: 0 1.2rem;
+        font: 500 1.525rem/1.625rem "Open Sans", sans-serif;
+    }
+
     .services-section .price-cards {
         display: block !important;
     }
@@ -520,36 +716,17 @@ p {
 
     .logo {
         max-width: 7em !important;
-        margin-left: auto;
+        margin-top: -0.3rem !important;
         margin-right: auto;
-        margin-bottom: 2rem;
+        margin-left: 0 !important;
     }
 
-    .main-heading h1 {
-        margin-top: 0.5rem;
-        margin-bottom: 3rem;
-    }
-
-    .all-links-ul {
-        width: 90vw;
-        display: -webkit-box !important;
-        display: -ms-flexbox !important;
-        display: flex !important;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        flex-flow: row wrap;
+    .all-links {
+        display: none;
     }
 
     .p-heading {
-        width: 95%;
+        width: 100%;
         margin-right: auto;
         margin-left: auto;
     }
