@@ -402,14 +402,12 @@ p {
 
 .services-section .price-cards {
     display: flex;
-    /* grid-template-columns: repeat(3, 1fr); */
-    justify-content: space-between !important;
+    justify-content: space-between;
 }
 
 .services-section .single-template {
     max-width: 20.875rem;
     margin-bottom: 2rem !important;
-    /* margin: 0 ; */
 }
 
 .services-section .single-template .card-img-fluid {
@@ -496,6 +494,10 @@ p {
 }
 
 @media (max-width: 425px) {
+    .services-section .price-cards {
+        display: block !important;
+    }
+
     .col-5 {
         margin-right: auto !important;
     }
