@@ -60,8 +60,11 @@ p {
 .main-heading .p-large {
     margin-bottom: 2rem;
     color: #dfe5ec;
-    font: 400 1.125rem/1.625rem "Open Sans", sans-serif;
+    font: 500 1.225rem/1.625rem "Open Sans", sans-serif !important;
     margin-top: 0.1em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 5rem !important;
 }
 
 .front-main-content {
@@ -612,7 +615,7 @@ p {
 
 @media only screen and (min-width: 1200px) {
     .p-heading {
-        width: 55%;
+        width: 40em !important;
     }
 }
 
@@ -622,15 +625,13 @@ p {
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1023px) {
     .p-heading {
         width: 85%;
-        margin-right: auto;
-        margin-left: auto;
     }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .header {
         width: 100vw;
         height: 90vh;
@@ -643,7 +644,7 @@ p {
     }
 
     .container {
-        min-width: 98vw;
+        max-width: 90vw !important;
     }
 
     .header-content {
@@ -690,6 +691,21 @@ p {
         font: 500 1.525rem/1.625rem "Open Sans", sans-serif;
     }
 
+    .main-heading .p-large {
+        margin-bottom: 2rem;
+        color: #dfe5ec;
+        font: 500 1.225rem/1.625rem "Open Sans", sans-serif !important;
+        margin-top: 0.1em;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 1rem !important;
+    }
+
+    .services-section .single-template {
+        max-width: 100%;
+        margin-bottom: 2rem !important;
+    }
+
     .services-section .price-cards {
         display: block !important;
     }
@@ -726,8 +742,43 @@ p {
     }
 
     .p-heading {
+        padding: 0 0 !important;
         width: 100%;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .basic-1 .container .cards-2 {
+        text-align: center !important;
+    }
+
+    .accordian .area-1,
+    .accordian .area-2,
+    .accordian .area-3,
+    .accordian .area-4 {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .accordian .area-1,
+    .accordian .area-4 {
+        background-position: center !important;
+        background-size: cover !important;
+        width: 100% !important;
+        max-height: 27rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .accordian {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100% !important;
+    }
+
+    .accordian .area-3,
+    .accordian .area-4 {
+        padding: 0 2rem !important;
     }
 }
