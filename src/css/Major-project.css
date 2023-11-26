@@ -765,7 +765,7 @@ p {
     .accordian .area-1,
     .accordian .area-4 {
         background-position: center !important;
-        background-size: cover !important;
+        background-size: contain !important;
         width: 100% !important;
         max-height: 27rem !important;
         margin-left: auto !important;
