@@ -15,7 +15,7 @@
 body,
 p {
     color: #787976;
-    font: 400 1rem/1.5625rem "Open Sans", sans-serif;
+    /* font: 400 1rem/1.5625rem "Open Sans", sans-serif; */
 }
 
 .header {
@@ -404,13 +404,20 @@ p {
     font: 700 1rem/1.375rem "Montserrat", sans-serif;
 }
 
-.image-container img {
+.image-container {
     width: 100%;
+    overflow: hidden;
     border-radius: 0.25rem;
+    /* border-radius: 0.25rem; */
+}
+
+.image-container img {
+    /* width: 100%; */
+    /* border-radius: 0.25rem; */
 }
 
 .basic-1 .image-container img {
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     border-radius: 0.25rem;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -500,20 +507,19 @@ p {
 
 .accordian {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     height: 34.625rem;
+    overflow: hidden !important;
 }
 
 .accordian .area-1 {
-    height: 100%;
-    display: inline-block;
     background: url(../Major\ Project/details-1-background.jpg) center center no-repeat;
     background-size: cover;
 }
 
-.accordian .accordion-container h2 {
-    margin-bottom: 1.625rem;
-    font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+.accordian .area-4 {
+    background: url(../Major\ Project/details-2-background.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 .accordian .accordion-container {
@@ -522,7 +528,12 @@ p {
     padding-top: 6.375rem;
 }
 
-.accordian .accordion-container .item div {
+.accordian .accordion-container h2 {
+    margin-bottom: 1.625rem;
+    font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+}
+
+.accordian .accordion-container .item details {
     display: flex;
     flex-flow: row wrap;
 }
@@ -531,39 +542,45 @@ p {
     margin-bottom: 2rem;
 }
 
-.circle-numbering {
-    /* display: inline-block; */
-    width: 2.25rem;
-    height: 2.25rem;
+.accordian .area-2 .item details p {
+    margin-left: 3.725rem !important;
+    padding-right: 1rem;
+}
+
+.accordian .area-2 .item details .item-summary .circle-numbering {
     color: #484a46;
     border-radius: 50%;
     border: 0.125rem solid #484a46;
+    padding: 0.48rem 0.758rem !important;
     background-color: transparent;
     margin-right: 0.875rem;
     text-align: center;
     cursor: pointer;
     vertical-align: middle;
-    font: 700 1rem/2.125rem "Montserrat", sans-serif;
+    font: 700 1rem/2.125rem "Montserrat", sans-serif !important;
     transition: all 0.2s ease;
 }
 
-.accordian .accordion-container .item div:hover {
+.accordian .area-2 .item details .item-summary:active .circle-numbering {
+    background-color: #14bf98;
+    color: #fff;
+}
 
-    .circle-numbering,
-    .item-title {
-        color: #14bf98;
-        background-color: #fff;
-        color: #14bf98;
-    }
+summary {
+    list-style: none !important;
+}
 
-    .circle-numbering {
-        border: 0.125rem solid #14bf98;
-    }
+.accordian .accordion-container .item .item-summary:hover span {
+    color: #14bf98;
+    background-color: #fff;
+}
+
+.accordian .accordion-container .item summary:hover .circle-numbering {
+    border: 0.125rem solid #14bf98;
 }
 
 .accordian .area-2 .item .item-title {
     display: inline-block;
-    width: auto;
     height: 2.25rem;
     color: #484a46;
     background-color: transparent;
@@ -595,17 +612,14 @@ p {
     margin-left: auto;
     padding-top: 6.75rem;
     padding-bottom: 0;
+}
 
-    p {
-        margin-bottom: 1rem;
-    }
-
+.accordian .area-3 p {
+    margin-bottom: 1rem;
 }
 
 .accordian .area-3 .progress-container {
     margin-top: 1.5rem;
-
-
 }
 
 .accordian .area-3 .progress-container .progress-label {
@@ -613,13 +627,261 @@ p {
     font: 600 0.875rem/1.25rem "Open Sans", sans-serif;
 }
 
+.testimonials {
+    background-color: #fbfbfb !important;
+}
+
+.testimonials .container .parent {
+    height: 19.5rem;
+    scroll-behavior: smooth;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap !important;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+.testimonials .container .parent::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.testimonials .container .parent .child {
+    min-width: 30.33% !important;
+    margin: 0 1rem !important;
+}
+
+.testimonials .container .parent .child h2 {
+    font: 700 1rem/1.375rem "Montserrat", sans-serif;
+    color: #484a46;
+    margin-top: 1rem;
+}
+
+.testimonials .container div .first-p {
+    margin-bottom: 3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials .container .parent .child .leading-relaxed {
+    /* word-break: break-all; */
+    white-space: normal;
+}
+
+/* CALL ME CSS */
+.form-call-me {
+    padding-top: 7rem;
+    padding-bottom: 5.625rem;
+    background-color: #153e52;
+}
+
+.form-call-me .container .callme-content {
+    margin-top: 1.375rem;
+    margin-right: 1.75rem;
+    margin-left: 3rem;
+}
+
+.form-call-me .container {
+    margin-left: 1.75rem;
+    margin-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.form-call-me .callme-content h2 {
+    margin-bottom: 1.375rem;
+    font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+    color: #fff !important;
+}
+
+.form-call-me .callme-content p {
+    color: #dfe5ec !important;
+}
+
+.form-call-me .callme-content .single-template-ul {
+    margin-top: 1.5rem;
+}
+
+.form-call-me .callme-content .single-template-ul-li {
+    margin-bottom: 0.5rem !important;
+    text-align: left;
+    color: #dfe5ec;
+}
+
+.form-call-me .callme-content .single-template-ul li i {
+    font-size: 0.5em;
+    color: #14bf98;
+}
+
+/* FORM Input section */
+.form-call-me .callme-input .form-group input:hover,
+.form-call-me .callme-input .form-group select:hover {
+    border: 1px solid #fff;
+}
+
+.form-call-me .callme-input .form-group input,
+.form-call-me .callme-input .form-group select {
+    width: 100%;
+    margin-bottom: 1.25rem !important;
+    background-color: #2A5D77;
+    border-radius: 5px;
+    border: #2A5D77;
+    padding-left: 1.3125rem;
+}
+
+.form-call-me .callme-input .form-group select {
+    width: 100%;
+    margin-bottom: 1.25rem !important;
+    background-color: #2A5D77;
+    border-radius: 5px;
+    border: #2A5D77;
+    padding-top: 0.955rem;
+    padding-bottom: 0.995rem;
+    padding-left: 1.3125rem;
+}
+
+.form-call-me .callme-input .form-group input::placeholder,
+.form-call-me .callme-input .form-group select .select-option {
+    color: #fff;
+}
+
+.form-call-me .callme-input .form-group input:focus {
+    outline: none;
+}
+
+.form-call-me .callme-input .form-group input {
+    display: block;
+    width: 100%;
+    margin: 0.5rem auto;
+    height: 50px;
+}
+
+.form-call-me .callme-input .checkbox-group a {
+    text-decoration: underline;
+}
+
+.form-call-me .callme-input form .form-submit-btn button {
+    display: inline-block;
+    width: 100%;
+    height: 3.125rem;
+    border: 0.125rem solid #14bf98;
+    border-radius: 0.25rem;
+    background-color: #14bf98;
+    color: #fff;
+    font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 1.5rem;
+}
+
+.form-call-me .callme-input form .form-submit-btn button:hover {
+    border: 0.125rem solid #14bf98;
+    background-color: transparent;
+    color: #14bf98;
+}
+
+/* PROJECTS Section CSS */
+.showcase {
+    padding-top: 7rem;
+    padding-bottom: 5.625rem;
+}
+
+.showcase .container div,
+h2 {
+    text-align: center;
+}
+
+.showcase .container .gallery-section {
+    margin-top: 3rem;
+}
+
+.showcase .container .gallery-section .gallery-header label {
+    display: inline-block;
+    margin-right: 0.1875rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.1875rem;
+    padding: 0.3125rem 1.375rem 0.25rem 1.375rem;
+    border-radius: 0.25rem;
+    font: 700 0.75rem/1.25rem "Montserrat", sans-serif !important;
+    cursor: pointer;
+}
+
+.showcase .container .gallery-section .gallery-header .first_child,
+.showcase .container .gallery-section .other_child:hover {
+    background-color: #14bf98;
+    color: #fff;
+}
+
+.showcase .container .gallery-section label {
+    background-color: #f1f4f7;
+    color: #7b7e85;
+}
+
+/* PROJECT showcase Gallery CSS */
+.showcase .container .gallery-group {
+    height: 540px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.showcase .container .gallery-group .image-outer {
+    position: relative;
+    text-align: center;
+    overflow: hidden !important;
+}
+
+.showcase .container .gallery-group .image-outer .figcaption {
+    display: none;
+    color: #fff;
+    font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity all 0.3s;
+}
+
+.showcase .container .gallery-group .image-outer img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.showcase .container .gallery-group div:hover img {
+    transform: scale(1.15);
+    transition: all 0.3s;
+}
+
+.showcase .container .gallery-group .image-outer:hover .figcaption {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    transition: all 0.3s ease;
+}
+
 @media only screen and (min-width: 1200px) {
+    .form-call-me .callme-input form {
+        padding-left: 1.75rem;
+        padding-right: 3rem;
+    }
+
     .p-heading {
         width: 40em !important;
     }
 }
 
 @media only screen and (min-width: 992px) {
+
     .p-heading {
         width: 65%;
     }
@@ -631,7 +893,79 @@ p {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 260px) and (max-width: 767px) {
+    .accordian {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        height: auto !important;
+        /* overflow: hidden !important; */
+        /* white-space: normal; */
+    }
+
+    .accordian .area-1 {
+        background: url(../Major\ Project/details-1-background.jpg) center center no-repeat;
+    }
+
+    .accordian .area-4 {
+        background: url(../Major\ Project/details-2-background.jpg) center center no-repeat;
+    }
+
+    .accordian .area-1,
+    .accordian .area-4 {
+        width: 100%;
+        height: 32em !important;
+        background-size: cover;
+        /* border: 1px solid red; */
+    }
+
+    .accordian .area-2 .accordion-container {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .accordian .accordion-container {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 3.375rem;
+    }
+
+    .testimonials .container div .first-p {
+        width: 100% !important;
+    }
+
+    .testimonials .container .parent .child {
+        min-width: 95% !important;
+        margin: 0 1rem !important;
+    }
+
+
+    .form-call-me .container {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .form-call-me .container .callme-content {
+        margin-bottom: 1.375rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .showcase .container .gallery-group {
+        height: 540px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .showcase .container .gallery-group .image-outer .figcaption {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
 
     .header {
         width: 100%;
@@ -753,10 +1087,9 @@ p {
         text-align: center !important;
     }
 
-    .accordian .area-1,
     .accordian .area-2,
-    .accordian .area-3,
-    .accordian .area-4 {
+    .accordian .area-3 {
+        min-width: 100%;
         display: block !important;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -766,7 +1099,7 @@ p {
     .accordian .area-4 {
         background-position: center !important;
         background-size: contain !important;
-        width: 100% !important;
+        min-width: 100% !important;
         max-height: 27rem !important;
         margin-left: auto !important;
         margin-right: auto !important;

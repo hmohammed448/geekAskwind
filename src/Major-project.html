@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    html {
+        scroll-behavior: smooth !important;
+    }
+
+    .container {
+        max-width: 71em !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -23,7 +36,7 @@
 
 <body>
     <main class="header">
-        <div class="header-content">
+        <div class="header-content" id="home">
 
             <!-- Navbar -->
             <nav class="navbar p-4">
@@ -32,12 +45,12 @@
                     alt="">
                 <div class="all-links">
                     <ul class="all-links-ul">
-                        <li id="home"><a href="">HOME</a></li>
-                        <li id="intro"><a href="#intro">INTRO</a></li>
-                        <li id="services"><a href="#services">SERVICES</a></li>
-                        <li id="call-me"><a href="#call-me">CALL ME</a></li>
-                        <li id="projects"><a href="#projects">PROJECTS</a></li>
-                        <li id="about"><a href="#about" class="about-flex">ABOUT<i class="material-symbols-outlined">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#intro">INTRO</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#call-me">CALL ME</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#about" class="about-flex">ABOUT<i class="material-symbols-outlined">
                                     arrow_drop_down
                                 </i></a></li>
                         <li id="contact"><a href="#contact">CONTACT</a></li>
@@ -129,10 +142,10 @@
     </section>
     <!-- Services Section -->
     <!-- Part 1 -->
-    <section id="#services" class="services-section basic-1">
+    <section id="services" class="services-section basic-1">
         <div class="animate__animated animate__fadeInUp container px-4 mx-auto">
             <div class="basic-2">
-                <div class="section-title">INTRO</div>
+                <div class="section-title">SERVICES</div>
                 <h2 class="section-h2">Choose The Service Package
                     <br>
                     That Suits Your Needs
@@ -239,35 +252,94 @@
     </section>
 
     <!-- Part 2 -->
+    <!-- accordian part 1 -->
     <section class="accordian">
         <div class="area-1"></div>
-        <!-- <div class="area-2">
+        <div class="area-2">
             <div class="accordion-container">
                 <h2 class="section-h2">Accelerate Business Growth To Improve Revenue Numbers</h2>
-                <div class="item">
-                    <div id="heading-one">
-                        <span class="circle-numbering">1</span>
-                        <span class="item-title">How Can Aria Help Your Business</span>
-                    </div>
+                <div class="item item-one">
+                    <details>
+                        <summary class="item-summary">
+                            <span class="circle-numbering">1</span>
+                            <span class="item-title">How Can Aria Help Your Business</span>
+                        </summary>
+                        <p class="details-p">At Aria solutions, we’ve taken the consultancy concept one step further by
+                            offering a full
+                            service management organization with expertise.</p>
+                    </details>
                 </div>
-                <div class="item">
-                    <div id="heading-second">
-                        <span class="circle-numbering">2</span>
-                        <span class="item-title">Great Strategic Business Planning</span>
-                    </div>
+                <div class="item item-second">
+                    <details>
+                        <summary class="item-summary">
+                            <span class="circle-numbering">2</span>
+                            <span class="item-title">Great Strategic Business Planning</span>
+                        </summary>
+                        <p class="details-p">Aria partners with businesses to business growth and development ideas
+                            including environment
+                            analysis, plan execution and evaluation.</p>
+                    </details>
                 </div>
-                <div class="item">
-                    <div id="heading-third">
-                        <span class="circle-numbering">3</span>
-                        <span class="item-title">Online Marketing Campaigns</span>
-                    </div>
+                <div class="item item-third">
+                    <details>
+                        <summary class="item-summary">
+                            <span class="circle-numbering">3</span>
+                            <span class="item-title">Online Marketing Campaigns</span>
+                        </summary>
+                        <p class="details-p">An awesome online marketing plan won't save your bad product but paired
+                            with a good product,
+                            the sky is the limit for what can be achieved.</p>
+                    </details>
                 </div>
             </div>
-        </div> -->
+        </div>
+    </section>
+
+    <!-- accordian part 2 -->
+    <section class="accordian">
+        <div class="area-2">
+            <div class="accordion-container">
+                <h2 class="section-h2">Accelerate Business Growth To Improve Revenue Numbers</h2>
+                <div class="item item-one">
+                    <details>
+                        <summary class="item-summary">
+                            <span class="circle-numbering">1</span>
+                            <span class="item-title">How Can Aria Help Your Business</span>
+                        </summary>
+                        <p class="details-p">At Aria solutions, we’ve taken the consultancy concept one step further by
+                            offering a full
+                            service management organization with expertise.</p>
+                    </details>
+                </div>
+                <div class="item item-second">
+                    <details>
+                        <summary class="item-summary">
+                            <span class="circle-numbering">2</span>
+                            <span class="item-title">Great Strategic Business Planning</span>
+                        </summary>
+                        <p class="details-p">Aria partners with businesses to business growth and development ideas
+                            including environment
+                            analysis, plan execution and evaluation.</p>
+                    </details>
+                </div>
+                <div class="item item-third">
+                    <details>
+                        <summary class="item-summary">
+                            <span class="circle-numbering">3</span>
+                            <span class="item-title">Online Marketing Campaigns</span>
+                        </summary>
+                        <p class="details-p">An awesome online marketing plan won't save your bad product but paired
+                            with a good product,
+                            the sky is the limit for what can be achieved.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+        <div class="area-4"></div>
     </section>
     <!-- Part 2 -->
-    <section class="accordian">
-        <!-- <div class="area-3">
+    <!-- <section class="accordian">
+         <div class="area-3">
             <div class="accordion-sections">
                 <h4 class="">Business Services For Companies</h4>
                 <p class="">
@@ -280,11 +352,213 @@
                 <br>
                 <progress id="file" value="32" max="100"> 32% </progress>
             </div>
-        </div> -->
+        </div>
         <div class="area-4"></div>
+    </section>-->
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <section class="container text-gray-600 body-font py-24 text-center">
+            <div class="h-auto px-5">
+                <h2 class="section-h2">Read Our Customer Testimonials</h2>
+                <p class="first-p">
+                    Our clients are our partners and we can not imagine a better future for our company without helping
+                    them reach their objectives</p>
+                <div class="parent -m-4">
+                    <div class="child lg:w-1/3 lg:mb-0 mb-6 p-4">
+                        <div class="h-full text-center">
+                            <img alt="testimonial"
+                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                src="../src/images/testimonial-1.jpg">
+                            <p class="leading-relaxed"><em>The guys from Aria helped with getting my business off the
+                                    ground
+                                    and turning into a profitable company.</em></p>
+                            <h2 class="">Jude Thorn - Founder</h2>
+                        </div>
+                    </div>
+                    <div class="child lg:w-1/3 lg:mb-0 mb-6 p-4">
+                        <div class="h-full text-center">
+                            <img alt="testimonial"
+                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                src="../src/images/testimonial-2.jpg">
+                            <p class="leading-relaxed"><em>I purchased the Growth Accelerator service pack a few years
+                                    ago and I renewed the contract each year.</em></p>
+                            <h2 class="">Marsha Singer - Marketer</h2>
+                        </div>
+                    </div>
+                    <div class="child lg:w-1/3 lg:mb-0 mb-6 p-4">
+                        <div class="h-full text-center">
+                            <img alt="testimonial"
+                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                src="../src/images/testimonial-3.jpg">
+                            <p class="leading-relaxed"><em>Aria's CEO personally attends client meetings and gives his
+                                    feedback on business growth strategies.</em></p>
+                            <h2 class="">Roy Smith - Developer</h2>
+                        </div>
+                    </div>
+                    <div class="child lg:w-1/3 lg:mb-0 mb-6 p-4">
+                        <div class="h-full text-center">
+                            <img alt="testimonial"
+                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                src="../src/images/testimonial-4.jpg">
+                            <p class="leading-relaxed"><em>At the beginning I thought the prices are a little high for
+                                    what they offer but they over deliver each and every time.</em></p>
+                            <h2 class="">Ronald Spice - Owner</h2>
+                        </div>
+                    </div>
+                    <div class="child lg:w-1/3 lg:mb-0 mb-6 p-4">
+                        <div class="h-full text-center">
+                            <img alt="testimonial"
+                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                src="../src/images/testimonial-5.jpg">
+                            <p class="leading-relaxed"><em>I recommend Aria to every business owner or growth leader
+                                    that wants to take his company to the next level.</em></p>
+                            <h2 class="">Lindsay Rune - Manager</h2>
+                        </div>
+                    </div>
+                    <div class="child lg:w-1/3 lg:mb-0 mb-6 p-4">
+                        <div class="h-full text-center">
+                            <img alt="testimonial"
+                                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                src="../src/images/testimonial-6.jpg">
+                            <p class="leading-relaxed"><em>My goals for using Aria's services seemed high when I first
+                                    set them but they've met them with no problems.</em></p>
+                            <h2 class="">Ann Black - Consultant</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </section>
 
+    <!-- CALL ME Section -->
+    <div id="call-me" class="form-call-me">
+        <div class="container">
+            <!-- form content -->
+            <div class="callme-content">
+                <div class="section-title">CALL ME</div>
+                <h2 class="form-section-h2" style="text-align: left;">Have Us Contact You By Filling And Submitting The
+                    Form</h2>
+                <p>You are just a few steps away from a personalized offer. Just fill in the form and send it to us and
+                    we'll get right back with a call to help you decide what service package works.</p>
+                <ul class="single-template-ul">
+                    <li class="single-template-ul-li">
+                        <i class="material-symbols-outlined">
+                            square
+                        </i>
+                        <span>It's very easy just fill in the form so we can call</span>
+                    </li>
+                    <li class="single-template-ul-li">
+                        <i class="material-symbols-outlined">
+                            square
+                        </i>
+                        <span>During the call we'll require some info about the company</span>
+                    </li>
+                    <li class="single-template-ul-li">
+                        <i class="material-symbols-outlined">
+                            square
+                        </i>
+                        <span>Don't hesitate to email us for any questions or inquiries</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Call me form -->
+            <div class="callme-input">
+                <form action="" method="get">
+                    <div class="form-group">
+                        <input type="text" name="name" id="user-name" placeholder="Name">
+                        <input type="number" name="num" maxlength="10" size="10" placeholder="Phone">
+                        <input type="email" name="email" id="email-id" placeholder="Email">
+                        <select class="form-select" name="" id="form-select">
+                            <option value disabled selected class="select-option">Interested in...</option>
+                            <option value="" class="select-option">Off The Ground</option>
+                            <option value="" class="select-option">Accelerated Growth</option>
+                            <option value="" class="select-option">Market Domination</option>
+                        </select>
+                    </div>
 
+                    <div class="checkbox-group">
+                        <!-- &nbsp; -->
+                        <input type="checkbox" name="" id="">
+                        <span>
+                            I agree with Aria's stated <a href="">Privacy Policy</a>
+                            and <a href="">Terms & Conditions</a></span>
+                    </div>
+                    <div class="form-submit-btn">
+                        <button type="submit">CALL ME</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS Section -->
+    <div id="projects" class="showcase">
+        <div class="container">
+            <div class="section-title">SERVICES</div>
+            <h2 class="section-h2">Projects That We're Proud Of</h2>
+            <div class="gallery-section">
+                <div class="gallery-header">
+                    <label for="" class="first_child">SHOW ALL</label>
+                    <label for="" class="other_child">DESIGN</label>
+                    <label for="" class="other_child">DEVELOPMENT</label>
+                    <label for="" class="other_child">MARKETING</label>
+                    <label for="" class="other_child">SEO</label>
+                </div>
+                <div class="gallery-group">
+                    <div class="image-outer">
+                        <div class="figcaption">
+                            <span>Online Banking</span>
+                        </div>
+                        <img src="Major Project/project-gallery-1.jpg" alt="">
+                    </div>
+                    <div class="image-outer">
+                        <div class="figcaption">
+                            <span>Classic Industry</span>
+                        </div>
+                        <img src="Major Project/project-gallery-2.jpg" alt="">
+                    </div>
+                    <div class="image-outer">
+                        <div class="figcaption">
+                            <span>BoomBap Audio</span>
+                        </div>
+                        <img src="Major Project/project-gallery-3.jpg" alt="">
+                    </div>
+                    <div class="image-outer">
+                        <div class="figcaption">
+                            <span>Van Moose</span>
+                        </div>
+                        <img src="Major Project/project-gallery-4.jpg" alt="">
+                    </div>
+                    <div class="image-outer">
+                        <div class="figcaption">
+                            <span>Joy Moments</span>
+                        </div>
+                        <img src="Major Project/project-gallery-5.jpg" alt="">
+                    </div>
+                    <div class="image-outer">
+                        <div class="figcaption">
+                            <span>Spark Events</span>
+                        </div>
+                        <img src="Major Project/project-gallery-6.jpg" alt="">
+                    </div>
+                    <div class="image-outer">
+                        <div class="figcaption">
+                            <span>Casual Wear</span>
+                        </div>
+                        <img src="Major Project/project-gallery-7.jpg" alt="">
+                    </div>
+                    <div class="image-outer">
+                        <div class="figcaption">
+                            <span>Zazoo Apps</span>
+                        </div>
+                        <img src="Major Project/project-gallery-8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- All scripts -->
 
