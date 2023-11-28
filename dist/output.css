@@ -709,10 +709,6 @@ video {
   width: 100%;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -824,9 +820,12 @@ video {
   padding-bottom: 1rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-0\.5 {
+  padding-bottom: 0.125rem;
 }
 
 .pb-8 {
@@ -843,14 +842,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pb-0\.5 {
-  padding-bottom: 0.125rem;
 }
 
 .text-center {
