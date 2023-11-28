@@ -242,7 +242,8 @@ p {
     width: 2em;
 }
 
-.nav-2 .fa-stack {
+.nav-2 .fa-stack,
+.social-links .fa-stack {
     margin-right: 0.25rem;
     margin-bottom: auto;
     margin-top: auto;
@@ -251,19 +252,20 @@ p {
     height: 1.625rem;
 }
 
-.nav-2 .fa-stack .hexagon {
+.nav-2 .fa-stack .hexagon,
+.social-links .fa-stack .hexagon {
     width: 1.625rem;
     height: 1.625rem;
     background-size: 1.625rem 1.625rem;
 }
 
-.nav-2 .fa-stack-1x {
+.nav-2 .fa-stack-1x,
+.social-links .fa-stack-1x {
     font-size: 0.6875rem;
     line-height: 1.625rem;
 }
 
 .cards-2 .fa-stack {
-    /* border: 1px solid orange; */
     width: 6rem;
     height: 6rem;
     display: inline-block;
@@ -654,10 +656,19 @@ summary {
     margin: 0 1rem !important;
 }
 
+.consultants .members-group .member-designation,
 .testimonials .container .parent .child h2 {
     font: 700 1rem/1.375rem "Montserrat", sans-serif;
     color: #484a46;
+}
+
+.testimonials .container .parent .child h2 {
     margin-top: 1rem;
+}
+
+.consultants .members-group .member-designation {
+    margin-top: 0.21rem;
+    margin-bottom: 0.5rem;
 }
 
 .testimonials .container div .first-p {
@@ -824,7 +835,6 @@ h2 {
 /* PROJECT showcase Gallery CSS */
 .showcase .container .gallery-group {
     height: 540px;
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -870,7 +880,77 @@ h2 {
     transition: all 0.3s ease;
 }
 
+.members-group {
+    display: inline-block;
+    width: 14.375rem;
+    margin-right: 1.375rem;
+    margin-left: 1.375rem;
+}
+
+.members-group .member-image {
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+
+.members-group .member-image:hover img {
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.consultants .container .member-group .social-links {
+    display: inline-block;
+}
+
+.members-group .member-name {
+    font: 400 1.125rem/1.625rem "Open Sans", sans-serif
+}
+
+.member-group-parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.about-section .item-2-parent {
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.about-section .item-2 span {
+    display: inline-block;
+}
+
+.about-section .item-2 .about-h2 {
+    display: inline-block;
+    margin-bottom: 0.125rem;
+    color: #14bf98;
+    font: 700 2.875rem/3.25rem "Montserrat", sans-serif;
+}
+
+.about-section .container {
+    max-width: 71em;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.about-section .about-divider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.about-section .about-divider .image-box {
+    padding-right: 1.5rem !important;
+    padding-bottom: 1.5rem;
+}
+
+/* .about-section .about-divider .image-box {} */
+
 @media only screen and (min-width: 1200px) {
+
     .form-call-me .callme-input form {
         padding-left: 1.75rem;
         padding-right: 3rem;
@@ -881,26 +961,72 @@ h2 {
     }
 }
 
-@media only screen and (min-width: 992px) {
-
-    .p-heading {
-        width: 65%;
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .about-section .about-divider {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-}
 
-@media screen and (min-width: 768px) and (max-width:1023px) {
+    .about-section .about-divider .content-box,
+    .about-section .about-divider .image-box {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+        width: 100% !important;
+        /* overflow: hidden; */
+    }
+
+    .member-group-parent {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.5rem;
+    }
+
     .p-heading {
         width: 85%;
     }
 }
 
-@media (min-width: 260px) and (max-width: 767px) {
+@media screen and (min-width: 260px) and (max-width: 768px) {
+
+    .about-section .about-divider {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .about-section .about-divider .content-box,
+    .about-section .about-divider .image-box {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 100% !important;
+        /* overflow: hidden; */
+    }
+
+    .member-group-parent {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .members-group {
+        display: inline-block;
+        width: 14.375rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.5rem;
+    }
+
     .accordian {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         height: auto !important;
-        /* overflow: hidden !important; */
-        /* white-space: normal; */
     }
 
     .accordian .area-1 {
@@ -986,6 +1112,9 @@ h2 {
 
     .container {
         max-width: 90vw !important;
+        /* margin-left: 0.5rem !important;
+        margin-right: 0.5rem !important; */
+        /* remove later if not work */
     }
 
     .header-content {
