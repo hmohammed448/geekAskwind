@@ -76,12 +76,12 @@ p {
 .logo {
     max-width: 7em !important;
     margin-left: 10px;
+    align-self: flex-start;
 }
 
 .navbar {
     width: 100vw;
     position: fixed;
-    /* inset: 0; */
     top: 0;
     left: 0;
     right: 0;
@@ -99,19 +99,22 @@ p {
     -ms-flex-align: center;
     align-items: center;
     background-color: #113448;
+    /* flex-flow: column wrap !important; */
 }
 
 .all-links {
+    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
+    align-self: flex-end;
 }
 
 .all-links-ul {
-    width: 80vw;
+    /* width: 80vw; */
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -125,6 +128,7 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    /* margin-right: -7.5rem !important; */
 }
 
 #about {
@@ -168,35 +172,6 @@ p {
     -ms-flex-align: center;
     align-items: center;
 }
-
-/* .social {
-    position: relative !important;
-    width: 2em !important;
-    margin: auto 0.2em;
-    height: 2em;
-}
-
-.social-items {
-    position: relative;
-    display: inline-block;
-}
-
-.social img {
-    position: relative;
-    left: -0.85em;
-    min-width: 0.5em !important;
-    z-index: 1;
-} */
-
-/* .social i::before {
-    padding: 0 !important;
-    margin: 0 !important;
-    position: absolute;
-    z-index: 2;
-    top: -2.8em !important;
-    left: 0.85em !important;
-    font-size: 0.8rem !important;
-} */
 
 .form-2 .fa-stack {
     margin-right: 0.25rem;
@@ -385,7 +360,8 @@ p {
 }
 
 .section-title {
-    margin-bottom: 0.1rem;
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.5rem;
     color: #14bf98;
     font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
 }
@@ -411,12 +387,6 @@ p {
     width: 100%;
     overflow: hidden;
     border-radius: 0.25rem;
-    /* border-radius: 0.25rem; */
-}
-
-.image-container img {
-    /* width: 100%; */
-    /* border-radius: 0.25rem; */
 }
 
 .basic-1 .image-container img {
@@ -465,13 +435,15 @@ p {
 .services-section .single-template .section-h2 {
     font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
     margin-bottom: 0.75rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
+.about-section .content-box ul .single-template-ul-li,
 .services-section .single-template .single-template-ul-li {
     text-align: left;
 }
 
+.about-section .content-box ul .single-template-ul-li i,
 .services-section .single-template-ul li i {
     font-size: 0.5em;
     color: #14bf98;
@@ -801,8 +773,7 @@ summary {
     padding-bottom: 5.625rem;
 }
 
-.showcase .container div,
-h2 {
+.showcase .container div {
     text-align: center;
 }
 
@@ -916,11 +887,18 @@ h2 {
 
 .about-section .item-2-parent {
     display: flex;
-    flex-wrap: row wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.about-section .item-2 {
+    display: flex;
+    justify-content: space-around;
 }
 
 .about-section .item-2 span {
     display: inline-block;
+    margin-left: 1rem !important;
 }
 
 .about-section .item-2 .about-h2 {
@@ -931,7 +909,6 @@ h2 {
 }
 
 .about-section .container {
-    max-width: 71em;
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
@@ -944,12 +921,15 @@ h2 {
 
 .about-section .about-divider .image-box {
     padding-right: 1.5rem !important;
-    padding-bottom: 1.5rem;
 }
 
-/* .about-section .about-divider .image-box {} */
+.about-section .about-divider .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+}
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (max-width: 1400px) {
 
     .form-call-me .callme-input form {
         padding-left: 1.75rem;
@@ -959,9 +939,9 @@ h2 {
     .p-heading {
         width: 40em !important;
     }
-}
+} */
 
-@media screen and (min-width: 768px) and (max-width:1024px) {
+/* @media screen and (min-width: 480px) and (max-width:1024px) {
     .about-section .about-divider {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -973,7 +953,6 @@ h2 {
         padding-right: 1.5rem !important;
         padding-left: 1.5rem !important;
         width: 100% !important;
-        /* overflow: hidden; */
     }
 
     .member-group-parent {
@@ -988,14 +967,36 @@ h2 {
     .p-heading {
         width: 85%;
     }
-}
+} */
 
-@media screen and (min-width: 260px) and (max-width: 768px) {
+@media screen and (max-width: 479px) {
+
+    .about-section .item-2-parent {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .about-section .item-2 {
+        display: flex;
+        flex-wrap: row wrap !important;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .about-section {
+        width: 100vw;
+        border: 2px solid red;
+    }
+
+    .about-section .container {
+        /* width: 95%; */
+        border: 2px dotted violet;
+    }
 
     .about-section .about-divider {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        display: flex;
+        flex-flow: row wrap;
     }
 
     .about-section .about-divider .content-box,
@@ -1003,7 +1004,14 @@ h2 {
         padding-right: 0 !important;
         padding-left: 0 !important;
         width: 100% !important;
-        /* overflow: hidden; */
+    }
+
+    .about-section .about-divider .image-box {
+        margin-bottom: 3rem !important;
+    }
+
+    .about-section .about-divider .image-box img {
+        width: 100%;
     }
 
     .member-group-parent {
@@ -1106,18 +1114,14 @@ h2 {
         background-position: center;
     }
 
-    .navbar {
-        max-height: 3.5rem !important;
-    }
+
 
     .container {
-        max-width: 90vw !important;
-        /* margin-left: 0.5rem !important;
-        margin-right: 0.5rem !important; */
-        /* remove later if not work */
+        width: 95vw !important;
     }
 
     .header-content {
+        position: relative;
         width: 100vw;
         height: 100%;
         margin: 0 0 !important;
@@ -1125,6 +1129,14 @@ h2 {
         justify-content: center;
         align-items: center;
         padding: 2rem;
+    }
+
+    .navbar {
+        height: 4rem !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 
     .header-content .container {
@@ -1200,7 +1212,7 @@ h2 {
         gap: 3em 0;
     }
 
-    .logo {
+    .navbar .logo {
         max-width: 7em !important;
         margin-top: -0.3rem !important;
         margin-right: auto;
