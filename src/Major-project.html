@@ -702,15 +702,15 @@
                     </div>
                     <div class="item-2-parent">
                         <div class="item-2 mt-4 mr-8">
-                            <h2 class="about-h2">231</h2>
+                            <h2 class="about-h2" id="value-231">231</h2>
                             <span class="leading-relaxed">Happy<br>Users</span>
                         </div>
                         <div class="item-2 mt-4 mr-8">
-                            <h2 class="about-h2">121</h2>
+                            <h2 class="about-h2" id="value-121">121</h2>
                             <span class="leading-relaxed">Issues<br>Solved</span>
                         </div>
                         <div class="item-2 mt-4 mr-8">
-                            <h2 class="about-h2">159</h2>
+                            <h2 class="about-h2" id="value-159">159</h2>
                             <span class="leading-relaxed">Good<br>Reviews</span>
                         </div>
                     </div>
@@ -836,7 +836,58 @@
         </div>
     </footer>
 
+
     <!-- All scripts -->
+    <script>
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        const obj = document.getElementById("value-231");
+        animateValue(obj, 0, 231, 5000);
+
+        function animateValue(val_121, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                val_121.innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        const val_121 = document.getElementById("value-121");
+        animateValue(val_121, 0, 121, 5000);
+
+        function animateValue(val_159, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                val_159.innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        const val_159 = document.getElementById("value-159");
+        animateValue(val_159, 0, 159, 5000);
+    </script>
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a2b83d2bef.js" crossorigin="anonymous"></script>
     <!-- AOS -->

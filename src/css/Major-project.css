@@ -1075,7 +1075,7 @@ summary {
     .about-section .item-2-parent {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: center !important;
     }
 
     .about-section .item-2 {
