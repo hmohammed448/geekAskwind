@@ -5,20 +5,6 @@
 * Browsers: last 4 version
 */
 
-html {
-    scroll-behavior: smooth;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-    scrollbar-width: none;
-}
-
-html::-webkit-scrollbar {
-    display: none;
-    /* Safari and Chrome */
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -342,10 +328,6 @@ p {
     min-width: 100vw;
     padding-top: 6rem;
     padding-bottom: 3rem;
-}
-
-.container {
-    max-width: 71em;
 }
 
 #intro .container {
@@ -760,6 +742,7 @@ summary {
     text-decoration: underline;
 }
 
+.contact-section .contact-input .contant-sec-btn,
 .form-call-me .callme-input form .form-submit-btn button {
     display: inline-block;
     width: 100%;
@@ -768,12 +751,13 @@ summary {
     border-radius: 0.25rem;
     background-color: #14bf98;
     color: #fff;
-    font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
+    font: 700 0.75rem/1.75rem "Montserrat", sans-serif !important;
     cursor: pointer;
     transition: all 0.2s;
     margin-top: 1.5rem;
 }
 
+.contact-section .contact-input .contant-sec-btn:hover,
 .form-call-me .callme-input form .form-submit-btn button:hover {
     border: 0.125rem solid #14bf98;
     background-color: transparent;
@@ -992,12 +976,12 @@ summary {
 }
 
 .contact-section .sub-container .contact-details {
-    width: 49% !important;
+    width: 50% !important;
     margin-bottom: 3rem !important;
 }
 
 .contact-section .sub-container .contact-input {
-    min-width: 48% !important;
+    width: 50% !important;
     display: flex;
     flex-flow: column wrap;
 }

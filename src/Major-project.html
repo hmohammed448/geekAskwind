@@ -2,7 +2,17 @@
 <html lang="en">
 <style>
     html {
-        scroll-behavior: smooth !important;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+        scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
     }
 
     .container {
@@ -562,9 +572,6 @@
     </div>
 
     <!-- Consultants -->
-
-
-    <!-- All scripts -->
     <section class="testimonials consultants">
         <div class="container text-gray-600 body-font py-24 text-center">
             <!-- heading container -->
@@ -755,33 +762,36 @@
                         </span>
                     </div>
                 </div>
-                
-                <!-- callme-input Section
-                <div class="contact-input inline-block">
-                    <form action="" method="get">
-                        <div class="form-group">
-                            <input type="text" name="name" id="user-name" placeholder="Name">
-                            <input type="number" name="num" maxlength="10" size="10" placeholder="Phone">
-                            <input type="email" name="email" id="email-id" placeholder="Email">
-                            <select class="form-select" name="" id="form-select">
-                                <option value disabled selected class="select-option">Interested in...</option>
-                                <option value="" class="select-option">Off The Ground</option>
-                                <option value="" class="select-option">Accelerated Growth</option>
-                                <option value="" class="select-option">Market Domination</option>
-                            </select>
-                        </div>
 
-                        <div class="checkbox-group">
-                            <input type="checkbox" name="" id="">
-                            <span>
-                                I agree with Aria's stated <a href="">Privacy Policy</a>
-                                and <a href="">Terms & Conditions</a></span>
+                <!-- callme-input Section -->
+                <section class="contact-input self-baseline">
+                    <div class="w-full">
+                        <div class="container mx-auto flex flex-col">
+                            <div class="flex flex-col w-full">
+                                <div class="relative mb-4">
+                                    <input type="text" id="name" name="name" placeholder="Name"
+                                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                                <div class="relative mb-4">
+                                    <input type="email" id="email" name="email" placeholder="Email"
+                                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                                <div class="relative mb-4">
+                                    <textarea id="message" name="message" placeholder="Your Message"
+                                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                </div>
+                                <div class="checkbox-group">
+                                    <!-- &nbsp; -->
+                                    <input type="checkbox" name="" id="">
+                                    <span>
+                                        I agree with Aria's stated <a href="" class="underline">Privacy Policy</a>
+                                        and <a href="" class="underline">Terms & Conditions</a></span>
+                                </div>
+                                <button type="button" class="contant-sec-btn">SUBMIT MESSAGE</button>
+                            </div>
                         </div>
-                        <div class="form-submit-btn">
-                            <button type="submit">CALL ME</button>
-                        </div>
-                    </form>
-                </div> -->
+                    </div>
+                </section>
             </div>
         </div>
     </section>
@@ -828,7 +838,7 @@
         </div>
     </footer>
 
-
+    <!-- All scripts -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a2b83d2bef.js" crossorigin="anonymous"></script>
     <!-- AOS -->
