@@ -181,10 +181,6 @@ p {
     height: 3.25rem;
 }
 
-#contact {
-    margin-right: 1rem !important;
-}
-
 .fa-stack-1x {
     color: #fff;
     -webkit-transition: all 0.2s ease;
@@ -973,17 +969,25 @@ summary {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: space-between !important;
 }
 
 .contact-section .sub-container .contact-details {
-    width: 50% !important;
-    margin-bottom: 3rem !important;
+    width: 48% !important;
+    padding-right: 3rem !important;
 }
 
 .contact-section .sub-container .contact-input {
     width: 50% !important;
     display: flex;
     flex-flow: column wrap;
+}
+
+.contact-section .add i,
+.contact-section .info i {
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+    color: #14bf98;
 }
 
 .contact-section .sub-container .contact-input form {
