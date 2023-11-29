@@ -974,7 +974,7 @@ summary {
 
 .contact-section .sub-container .contact-details {
     width: 48% !important;
-    padding-right: 3rem !important;
+    padding-right: 2rem !important;
 }
 
 .contact-section .sub-container .contact-input {
@@ -988,6 +988,15 @@ summary {
     margin-right: 0.5rem;
     font-size: 0.875rem;
     color: #14bf98;
+}
+
+.contact-section .info {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact-section .info span {
+    margin-right: 1rem !important;
 }
 
 .contact-section .sub-container .contact-input form {
@@ -1040,12 +1049,22 @@ summary {
     .contact-section .sub-container .contact-details {
         width: 100% !important;
         margin-bottom: 3rem !important;
+        padding-right: 0 !important;
     }
 
     .contact-section .sub-container .contact-input {
         min-width: 100% !important;
         display: flex;
         flex-flow: column wrap;
+    }
+
+    .contact-section .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-section .info span {
+        margin-top: 0.5rem !important;
     }
 
     .footer-section .text-box {
