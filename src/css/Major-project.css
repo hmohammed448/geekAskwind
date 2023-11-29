@@ -1203,27 +1203,25 @@ summary {
     }
 
     .header {
-        width: 100%;
-        height: 90vh;
+        width: 100vw !important;
+        height: 80vh !important;
         background-repeat: no-repeat;
         background-position: center;
     }
-
-
 
     .container {
         width: 98vw !important;
     }
 
     .header-content {
+        width: 100% !important;
         position: relative;
-        width: 100vw;
         height: 100%;
         margin: 0 0 !important;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
+        /* padding: 0 1rem !important; */
     }
 
     .navbar {
@@ -1235,12 +1233,13 @@ summary {
     }
 
     .header-content .container {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-        padding-top: 0;
-        padding-bottom: 2rem;
+        /* padding-top: 0; */
+        /* padding-bottom: 2rem; */
     }
 
     .front-main-content {
