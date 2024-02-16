@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +8,6 @@
 body,
 p {
     color: #787976;
-    /* font: 400 1rem/1.5625rem "Open Sans", sans-serif; */
 }
 
 .header {
@@ -26,9 +18,16 @@ p {
 }
 
 .header {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url(../Major\ Project/header-background.jpg) center center no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Major\ Project/header-background.jpg) center center no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Major\ Project/header-background.jpg) center center no-repeat;
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.3)),
+            to(rgba(0, 0, 0, 0.5))),
+        url(../Major\ Project/header-background.jpg) center center no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url(../Major\ Project/header-background.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url(../Major\ Project/header-background.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -72,7 +71,6 @@ p {
     margin-top: 6.5rem;
 }
 
-/* Navbar Section */
 .logo {
     max-width: 7em !important;
     margin-left: 10px;
@@ -99,7 +97,6 @@ p {
     -ms-flex-align: center;
     align-items: center;
     background-color: #113448;
-    /* flex-flow: column wrap !important; */
 }
 
 .all-links {
@@ -114,7 +111,6 @@ p {
 }
 
 .all-links-ul {
-    /* width: 80vw; */
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -128,7 +124,6 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    /* margin-right: -7.5rem !important; */
 }
 
 #about {
@@ -159,7 +154,7 @@ p {
 .all-links ul li a {
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
     color: #e8e7e7;
 }
@@ -296,7 +291,6 @@ p {
     transition: all 0.2s;
 }
 
-
 .btn-solid-reg,
 .my-button:hover {
     background-color: transparent;
@@ -391,9 +385,8 @@ p {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-
 .services-section {
-    background-color: #FBFBFB;
+    background-color: #fbfbfb;
 }
 
 .services-section .price-cards {
@@ -426,7 +419,6 @@ p {
 .services-section .single-template .section-h2 {
     font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
     margin-bottom: 0.75rem;
-    /* text-align: center; */
 }
 
 .about-section .content-box ul .single-template-ul-li,
@@ -604,14 +596,12 @@ summary {
     overflow-x: auto;
     overflow-y: hidden;
     -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
     scrollbar-width: none;
     white-space: nowrap !important;
 }
 
 .testimonials .container .parent::-webkit-scrollbar {
     display: none;
-    /* Safari and Chrome */
 }
 
 .testimonials .container .parent .child {
@@ -642,11 +632,9 @@ summary {
 }
 
 .testimonials .container .parent .child .leading-relaxed {
-    /* word-break: break-all; */
     white-space: normal;
 }
 
-/* CALL ME CSS */
 .form-call-me {
     padding-top: 7rem;
     padding-bottom: 5.625rem;
@@ -691,7 +679,6 @@ summary {
     color: #14bf98;
 }
 
-/* FORM Input section */
 .form-call-me .callme-input .form-group input:hover,
 .form-call-me .callme-input .form-group select:hover {
     border: 1px solid #fff;
@@ -701,18 +688,18 @@ summary {
 .form-call-me .callme-input .form-group select {
     width: 100%;
     margin-bottom: 1.25rem !important;
-    background-color: #2A5D77;
+    background-color: #2a5d77;
     border-radius: 5px;
-    border: #2A5D77;
+    border: #2a5d77;
     padding-left: 1.3125rem;
 }
 
 .form-call-me .callme-input .form-group select {
     width: 100%;
     margin-bottom: 1.25rem !important;
-    background-color: #2A5D77;
+    background-color: #2a5d77;
     border-radius: 5px;
-    border: #2A5D77;
+    border: #2a5d77;
     padding-top: 0.955rem;
     padding-bottom: 0.995rem;
     padding-left: 1.3125rem;
@@ -760,7 +747,6 @@ summary {
     color: #14bf98;
 }
 
-/* PROJECTS Section CSS */
 .showcase {
     padding-top: 7rem;
     padding-bottom: 5.625rem;
@@ -796,7 +782,6 @@ summary {
     color: #7b7e85;
 }
 
-/* PROJECT showcase Gallery CSS */
 .showcase .container .gallery-group {
     height: 540px;
     display: grid;
@@ -868,7 +853,7 @@ summary {
 }
 
 .members-group .member-name {
-    font: 400 1.125rem/1.625rem "Open Sans", sans-serif
+    font: 400 1.125rem/1.625rem "Open Sans", sans-serif;
 }
 
 .member-group-parent {
@@ -922,7 +907,6 @@ summary {
     object-fit: cover !important;
 }
 
-/* FOOTER CSS */
 .footer-section {
     background-color: #113448;
     padding-top: 5rem !important;
@@ -963,7 +947,6 @@ summary {
     text-align: center !important;
 }
 
-/* contact-section CSS*/
 .contact-section .sub-container {
     width: 100%;
     display: flex;
@@ -1035,7 +1018,6 @@ summary {
 
 .fa-stack:hover .hexagon {
     background: url(../images/hexagon-white.svg) center center no-repeat !important;
-
 }
 
 .fa-stack:hover .fa-stack-1x {
@@ -1045,7 +1027,6 @@ summary {
 }
 
 @media screen and (max-width: 479px) {
-
     .contact-section .sub-container .contact-details {
         width: 100% !important;
         margin-bottom: 3rem !important;
@@ -1145,7 +1126,6 @@ summary {
         width: 100%;
         height: 32em !important;
         background-size: cover;
-        /* border: 1px solid red; */
     }
 
     .accordian .area-2 {
@@ -1160,7 +1140,6 @@ summary {
 
     .accordian .accordion-container {
         width: 100%;
-        /* margin-left: 0; */
         padding-top: 3.375rem;
     }
 
@@ -1172,7 +1151,6 @@ summary {
         min-width: 95% !important;
         margin: 0 1rem !important;
     }
-
 
     .form-call-me .container {
         margin-left: 0.5rem;
@@ -1221,7 +1199,6 @@ summary {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* padding: 0 1rem !important; */
     }
 
     .navbar {
@@ -1238,8 +1215,6 @@ summary {
         justify-content: center;
         align-items: center;
         height: 100%;
-        /* padding-top: 0; */
-        /* padding-bottom: 2rem; */
     }
 
     .front-main-content {
